@@ -1,0 +1,12 @@
+import requests
+import json
+
+
+# Test All content
+    response = requests.get('https://api.mailtest.io/testaccount/123')
+    if response.status_code == 200:
+        print("PASS: recieved email " + str(response.status_code))
+    else:
+        print("FAIL: no email recieved for " + account_name + '/' + mail_id)
+
+    message = json.loads(response.content.decode('utf-8'))
