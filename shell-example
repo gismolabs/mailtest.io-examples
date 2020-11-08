@@ -1,0 +1,11 @@
+
+curl https://api.mailtest.io/brian/123 | python -m json.tool
+
+{
+    "recieved": "1603442341373",
+    "sender": "Brian O'Mullane <brianom@gmail.com>",
+    "destination": "brian+123@mailtest.io",
+    "subject": "brian 123",
+    "sent": "Fri, 23 Oct 2020 09:38:51 +0100",
+    "body": "123 brian\r\n"
+}
